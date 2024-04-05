@@ -51,3 +51,9 @@ VALUES
 
   select Distinct(salesman_Id)
   from orders;
+
+ -- 9= From the following table, write a SQL query to locate salespeople who live in the city of 'Paris'. Return salesperson's name, city.  
+    
+     select name
+     from orders where city = "Paris";
+ 
