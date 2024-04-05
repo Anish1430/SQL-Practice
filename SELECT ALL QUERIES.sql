@@ -18,3 +18,8 @@ VALUES
     (5003, 'Lauson Hen', 'San Jose', 0.12);
     
     select * from orders;
+
+  -- 2 =Write a SQL statement to display a string "This is SQL Exercise, Practice and Solution"
+   select "This is SQL Exercise , Practice and Solution" 
+      from orders;
+  
