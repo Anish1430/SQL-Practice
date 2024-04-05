@@ -39,3 +39,10 @@ VALUES
      
        select name,commission
        from orders;
+
+       
+  /* 7= Write a query to display the columns in a specific order, such as commission, salesman_ID, name,city, 
+        and purchase amount for all orders.
+ */   
+    select Commission,salesman_Id,name,city
+    from orders;
