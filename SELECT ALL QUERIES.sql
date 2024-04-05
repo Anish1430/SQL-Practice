@@ -46,3 +46,8 @@ VALUES
  */   
     select Commission,salesman_Id,name,city
     from orders;
+
+-- 8= Write a query to display the distinct salesman_Id.......
+
+  select Distinct(salesman_Id)
+  from orders;
