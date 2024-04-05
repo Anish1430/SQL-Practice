@@ -79,7 +79,7 @@ VALUES
 
 
  /*
-  From the following table, write a SQL query to find orders that are delivered by a salesperson with ID. 5001. 
+ 11= From the following table, write a SQL query to find orders that are delivered by a salesperson with ID. 5001. 
   Return ord_no, ord_date, purch_amt.  
 Sample table: orders
 
@@ -102,3 +102,41 @@ ord_no      purch_amt   ord_date    customer_id  salesman_id
 select ord_no,ord_date,purch_amt
 from orders
 where  salesman_Id =5001;
+
+
+ /*
+ 12= From the following table, write a SQL query to find the Nobel Prize winner(s) for the year 1970.Return year,subject and winner. 
+Sample table: nobel_win
+
+YEAR SUBJECT                   WINNER                                        COUNTRY                CATEGORY
+---- ------------------------- --------------------------------------------- ------------------------- ------------
+1970 Physics                   Hannes Alfven                                 Sweden                 Scientist
+1970 Physics                   Louis Neel                                    France                 Scientist
+1970 Chemistry                 Luis Federico Leloir                          France                 Scientist
+1970 Physiology                Ulf von Euler                                 Sweden                 Scientist
+1970 Physiology                Bernard Katz                                  Germany                Scientist
+1970 Literature                Aleksandr Solzhenitsyn                        Russia                 Linguist
+1970 Economics                 Paul Samuelson                                USA                    Economist
+1970 Physiology                Julius Axelrod                                USA                    Scientist
+1971 Physics                   Dennis Gabor                                  Hungary                Scientist
+1971 Chemistry                 Gerhard Herzberg                              Germany                Scientist
+1971 Peace                     Willy Brandt                                  Germany                Chancellor
+1971 Literature                Pablo Neruda                                  Chile                  Linguist
+1971 Economics                 Simon Kuznets                                 Russia                 Economist
+1978 Peace                     Anwar al-Sadat                                Egypt                  President
+1978 Peace                     Menachem Begin                                Israel                 Prime Minister
+1987 Chemistry                 Donald J. Cram                                USA                    Scientist
+1987 Chemistry                 Jean-Marie Lehn                               France                 Scientist
+1987 Physiology                Susumu Tonegawa                               Japan                  Scientist
+1994 Economics                 Reinhard Selten                               Germany                Economist
+1994 Peace                     Yitzhak Rabin                                 Israel                 Prime Minister
+1987 Physics                   Johannes Georg Bednorz                        Germany                Scientist
+1987 Literature                Joseph Brodsky                                Russia                 Linguist
+1987 Economics                 Robert Solow                                  USA                    Economist
+1994 Literature                Kenzaburo Oe                                  Japan                  Scientist
+
+*/
+
+  select year,subject,winner
+  from nobel_win 
+  where year=1970;
