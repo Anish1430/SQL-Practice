@@ -22,8 +22,11 @@ VALUES
   -- 2 =Write a SQL statement to display a string "This is SQL Exercise, Practice and Solution"
    select "This is SQL Exercise , Practice and Solution" 
       from orders;
-  
-      
+
   -- 3= Write a SQL query to display three numbers in three columns. 
     select 10,20,30
     from orders;
+
+ -- Write a SQL query to display the sum of two numbers 10 and 15 from the RDBMS server
+     select 10 + 20 
+     from orders;
