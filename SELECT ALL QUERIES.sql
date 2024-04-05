@@ -23,3 +23,7 @@ VALUES
    select "This is SQL Exercise , Practice and Solution" 
       from orders;
   
+      
+  -- 3= Write a SQL query to display three numbers in three columns. 
+    select 10,20,30
+    from orders;
