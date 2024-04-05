@@ -27,6 +27,10 @@ VALUES
     select 10,20,30
     from orders;
 
- -- Write a SQL query to display the sum of two numbers 10 and 15 from the RDBMS server
+ -- 4= Write a SQL query to display the sum of two numbers 10 and 15 from the RDBMS server
      select 10 + 20 
      from orders;
+-- 5= Write an SQL query to display the result of an arithmetic expression.
+      select (10 + 15) - (5 * 2)
+      from orders;
+     
