@@ -15,4 +15,6 @@ Sample table: customer
         3001 | Brad Guzan     | London     |       |        5005
 */
 
-  SELECT *
+     SELECT * 
+   FROM CUSTOMER
+    WHERE GRADE > 100;
