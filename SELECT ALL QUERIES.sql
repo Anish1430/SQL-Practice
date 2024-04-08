@@ -653,3 +653,48 @@ Sample table: item_mast
        SELECT  *
       FROM  ITEM_MAST
       WHERE PRODUCT_PRICE  BETWEEN 200 AND 600;
+
+
+/*
+26 From the following table, write a SQL query to calculate the average price for a manufacturer code of 16. Return avg.  
+
+Sample table: item_mast
+
+ PRO_ID PRO_NAME                       PRO_PRICE    PRO_COM
+------- ------------------------- -------------- ----------
+    101 Mother Board                    3200.00         15
+    102 Key Board                        450.00         16
+    103 ZIP drive                        250.00         14
+    104 Speaker                          550.00         16
+    105 Monitor                         5000.00         11
+    106 DVD drive                        900.00         12
+    107 CD drive                         800.00         12
+    108 Printer                         2600.00         13
+    109 Refill cartridge                 350.00         13
+    110 Mouse                            250.00         12
+*/
+   SELECT AVG(PRO_PRICE) 
+      FROM ITEM_MAST 
+      WHERE PRO_COM = 16;
+
+
+/*
+27  From the following table, write a SQL query to display the pro_name as 'Item Name' and pro_priceas 'Price in Rs.'  
+
+Sample table: item_mast
+
+ PRO_ID PRO_NAME                       PRO_PRICE    PRO_COM
+------- ------------------------- -------------- ----------
+    101 Mother Board                    3200.00         15
+    102 Key Board                        450.00         16
+    103 ZIP drive                        250.00         14
+    104 Speaker                          550.00         16
+    105 Monitor                         5000.00         11
+    106 DVD drive                        900.00         12
+    107 CD drive                         800.00         12
+    108 Printer                         2600.00         13
+    109 Refill cartridge                 350.00         13
+    110 Mouse                            250.00         12
+*/
+  SELECT PRO_NAME AS "Item Name",Pro_price as "Price in Rs."
+    from Item_mast;
