@@ -111,3 +111,23 @@ ord_no      purch_amt   ord_date    customer_id  salesman_id
    SELECT *
   FROM ORDERS 
    WHERE NOT ((ord_date ='2012-09-10' AND salesman_Id > 5005) OR purch_amt > 1000.00);
+
+/*
+7. From the following table, write a SQL query to find the details of those salespeople whose commissions range from 0.10 to0.12.
+Return salesman_id, name, city, and commission. 
+
+Sample table : salesman
+
+ salesman_id |    name    |   city   | commission 
+-------------+------------+----------+------------
+        5001 | James Hoog | New York |       0.15
+        5002 | Nail Knite | Paris    |       0.13
+        5005 | Pit Alex   | London   |       0.11
+        5006 | Mc Lyon    | Paris    |       0.14
+        5007 | Paul Adam  | Rome     |       0.13
+        5003 | Lauson Hen | San Jose |       0.12
+*/
+
+SELECT *
+FROM SALESMAN
+WHERE (commissio > 0.10 AND commission < 0.12);
