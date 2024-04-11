@@ -211,3 +211,36 @@ ord_no      purch_amt   ord_date    customer_id  salesman_id
   (100*(6000-purch_amt)/6000) AS "Unachieved %"
   FROM  orders
   WHERE (100*purch_amt)/6000>50;
+
+/*
+11. From the following table, write a SQL query to find the details of all employees whose last name is ‘Dosni’ or ‘Mardy’.
+ Return emp_id, emp_fname, emp_lname, and emp_dept.  
+
+Sample table : emp_details
+
+ EMP_ID EMP_FNAME       EMP_LNAME         EMP_DEPT
+--------- --------------- --------------- ----------
+   127323 Michale         Robbin                  57
+   526689 Carlos          Snares                  63
+   843795 Enric           Dosio                   57
+   328717 Jhon            Snares                  63
+   444527 Joseph          Dosni                   47
+   659831 Zanifer         Emily                   47
+   847674 Kuleswar        Sitaraman               57
+   748681 Henrey          Gabriel                 47
+   555935 Alex            Manuel                  57
+   539569 George          Mardy                   27
+   733843 Mario           Saule                   63
+   631548 Alan            Snappy                  27
+   839139 Maria           Foster                  57
+*/  1st Solution
+
+SELECT *
+FROM Emp_details
+where emp_Lname IN('Dosni','Mardy');
+
+2nd Solution
+
+SELECT *
+FROM Emp_Details
+where emp_Lname ='Dosni' OR emp_Lname='Mardy';
